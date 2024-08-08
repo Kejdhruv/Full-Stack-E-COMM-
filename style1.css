@@ -1,0 +1,211 @@
+/* Reset default padding and margin */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Added for better box sizing handling */
+  }
+  
+  /* Apply background image with a linear gradient */
+  /* Apply background image with a linear gradient and blur effect */
+/* Container for background image and gradient */
+.Overal2 {
+    position: relative; /* Establish positioning context */
+    overflow: hidden; /* Hide overflow for pseudo-elements */
+    min-height: 100vh; /* Ensure it covers the full height of the viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Overal2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('./assets/image8.jpg') no-repeat center center;
+    background-size: cover; /* Ensure the image covers the whole container */
+    filter: blur(5px); /* Apply blur effect */
+    z-index: -1; /* Place it behind the content */
+  }
+  
+  .Overal2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5), /* Black gradient with 50% opacity */
+        rgba(0, 0, 0, 0.5) /* Black gradient with 50% opacity */
+      );
+    z-index: -1; /* Ensure it sits above the blurred image */
+  }
+  
+  
+  
+  /* Admin Link Styles */
+  .Admin {
+    position: fixed;
+    top: 5%;
+    left: 10%;
+    font-size: 20px;
+    font-family: "Barlow", sans-serif;
+    text-decoration: none;
+    color: white; /* Ensure text color contrasts with background */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    background-color: rgba(255, 255, 255, 0.3); /* Green background */
+    padding: 10px 20px; /* Add padding for better appearance */
+    border-radius: 5px; /* Rounded corners for the background */
+    z-index: 1; /* Ensure it appears above other content */
+  }
+  
+  .Admin:hover {
+    background-color: rgb(80, 160, 80); /* Darker green on hover */
+  }
+
+  
+  /* Header Styles */
+  .Head {
+    position: fixed ;
+    top: 30%;
+    left: 39.5% ;
+    font-size: 150px  ;
+    color: #e50010;
+    font-family: "Bodoni Moda", serif;
+    font-weight: 200;
+    z-index: 1; /* Ensure it appears above other content */
+  }
+  
+  /* Cart Styles */
+  .Cart {
+    position: fixed;
+    right: 5%; /* Adjusted for better alignment */
+    top: 0px ;  /* Adjusted for better alignment */
+    z-index: 1; /* Ensure it appears above other content */
+    font-family: "Barlow", sans-serif;
+    color: white; /* Ensure text color contrasts with background */
+  }
+  
+  /* List Styles */
+  ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0; /* Removed default padding */
+    margin: 0; /* Removed default margin */
+    justify-content: center;
+  }
+  
+  /* Cart Button Styles */
+  #cart {
+    font-family: "Barlow", sans-serif;
+    font-size: 12px ; 
+    color: white ;
+  }
+  
+  /* Items Link Styles */
+  .items { 
+    margin-left: 2%; /* Adjusted for spacing */
+    font-size: large;
+    text-decoration: none;
+    color: white ;
+  }
+  
+  /* General Button Styles */
+  button {
+    padding: auto ; /* Adjusted padding for better appearance */
+    font-size: 12px; 
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    background-color: rgba(255, 255, 255, 0.3); /* Slightly transparent green background */
+    color: white; /* White text */
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    border: none; /* Removed default border */
+    border-radius: 5px; /* Added border radius for rounded corners */
+    backdrop-filter: blur(5px); /* Apply blur effect to the button's background */
+  }
+  
+  /* Button Hover and Active States */
+  button:hover {
+    backdrop-filter: blur(20px); /* Apply blur effect */
+    background-color: rgba(255, 255, 255, 0.3); /* Slightly darker and transparent green on hover */
+  }
+  
+  button:active {
+    backdrop-filter: blur(30px); /* Apply blur effect */
+    background-color: rgba(255, 255, 255, 0.3); /* Even darker and transparent green when active */
+  }
+  
+  /* Specific Button Styles */
+  #btn1 button, #btn2 button {
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    background-color: rgba(255, 255, 255, 0.3);
+     /* Green background for btn1 and btn2 */
+  }
+  
+  #btn1 button:hover, #btn2 button:hover {
+    backdrop-filter: blur(20px); /* Apply blur effect */
+    background-color: rgba(255, 255, 255, 0.3); 
+    color: red ;/* Darker green on hover for btn1 and btn2 */
+  }
+  
+  #btn1 button:active, #btn2 button:active {
+    backdrop-filter: blur(30px); /* Apply blur effect */
+    background-color: rgba(255, 255, 255, 0.3);; 
+    color: red ;/* Even darker green for btn1 and btn2 when active */
+  }
+  
+  /* Container1 Styles */
+  .Container1 {
+    position: absolute;
+    width: 100%;
+ 
+    top: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Content Styles */
+  .Content { 
+    position: fixed;
+    top: 50% ;
+    width: 40vw;
+    height: 5vh;
+    text-align: center;
+    padding-top: 0.8%;
+    backdrop-filter: blur(2px); /* Apply blur effect */
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+    border-radius: 5px; /* Added border radius for rounded corners */
+  }
+  
+  /* Options Link Styles */
+  .options {
+    margin: 0 5%; /* Adjusted margin for spacing */
+    color: white ;
+    font-family: "Barlow", sans-serif;
+    font-size: large;
+    text-decoration: none; /* Ensures no underline */
+  }
+  
+  .options:hover {
+    color: #e50010;
+  }
+  
+  /* Explore Section Styles */
+  .explore {
+    margin-top: 2%;
+    width: 80vw;
+    height: 68vh;
+  }
+  
+  /* Men Link Styles */
+  #Men {
+    text-decoration: none;
+  }
+  
+  

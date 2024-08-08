@@ -1,0 +1,139 @@
+/* Apply background image with a linear gradient */
+.Overall {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5), /* Black gradient with 50% opacity */
+      rgba(0, 0, 0, 0.5) /* Black gradient with 50% opacity */
+    ), 
+    url('./assets/image7.webp');
+  background-size: cover; /* Ensure the image covers the whole container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+  min-height: 100vh; /* Ensure it covers the full height of the viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Apply blur effect to the Login-Info container */
+.Login-Info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 300px;
+  height: 200px;
+  backdrop-filter: blur(2px); /* Apply blur effect */
+  background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background to enhance blur effect */
+  animation: slideIn 0.6s ease-out;
+}
+
+/* Form styles */
+.loginbox {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Input styles with blur effect */
+.custom-email,
+.custom-password {
+  width: 100%;
+  padding: 10px;
+  margin-top: 2%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease;
+  backdrop-filter: blur(5px); 
+  background-color: rgba(255, 255, 255, 0.1);/* Apply blur effect to input fields */
+}
+
+.custom-email:focus,
+.custom-password:focus {
+  border-color: red ;
+}
+
+/* Label styles */
+.custom-label {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  font-size: 16px;
+  color: #333;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.custom-email:focus + .custom-label,
+.custom-password:focus + .custom-label {
+  top: -15px;
+  left: 5px;
+  font-size: 12px;
+  color: red ;
+}
+
+.custom-email:not(:placeholder-shown) + .custom-label,
+.custom-password:not(:placeholder-shown) + .custom-label {
+  top: -15px;
+  left: 5px;
+  font-size: 12px;
+  color: red ;
+  font-weight: bold ;
+}
+
+/* Button styles */
+.btxxnnnnn {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-left: 35% ;
+}
+
+.btxxnnnnn:hover {
+  background-color: #0056b3;
+}
+
+/* Animation for form */
+@keyframes slideIn {
+  from {
+    transform: translate(-50%, -60%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+/* Ad styles */
+#ad {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 50px;
+  color: red ; 
+  text-align: center;
+  width: 100%;
+}
+#title6{
+  position: absolute;
+  top: 20px;
+  left: 10% ; 
+  transform: translateX(-50%);
+  font-size: 50px;
+  color: red ; 
+  text-align: center;
+  width: 100%;
+}
+  

@@ -1,0 +1,205 @@
+/* Cart Header */
+.CartHead {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  font-size: 48px;
+  padding: 10px;
+  text-align: center;
+  background-color: #28a745;
+  color: white;
+  top: 0;
+  left: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Container for all items in the cart */
+.ItemsinCart {
+  width: 55%; /* Container takes 60% of the screen width */
+  max-width: 1200px;
+  display: flex;
+  position: absolute;
+  top: 100px;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Styling for each individual cart item */
+.CartItem {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: relative; /* For absolute positioning of the remove button */
+  width: 100%; /* Ensure full width within the container */
+}
+
+/* Image styling */
+.CartItemImage {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Container for item details */
+.CartItemDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1; /* Allow details to take up remaining space */
+  gap: 5px;
+}
+
+/* Styling for item name */
+.CartItemName {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Styling for item price */
+.CartItemPrice {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Remove button styling */
+.RemoveButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: white;
+  background-color: #e74c3c;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.RemoveButton:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+
+/* Container for cart footer */
+.CartFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #f9f9f9;
+  position: fixed; /* Fixed at the bottom of the screen */
+  bottom: 0;
+  left: 65%;
+  width: 30%; /* Container takes 60% of the screen width */
+  max-width: 1200px;
+}
+
+/* Styling for total price */
+.TotalPrice {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Checkout button styling */
+.CheckoutButton {
+  padding: auto; 
+  font-size: 16px;
+  color: white;
+  background-color: #007bff; /* Blue background color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.CheckoutButton:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styling for the form */
+.CheckForm {
+  position: fixed; /* Fix the form to the top of the viewport */
+  top: 120px;
+  left: 65% ; /* Below the Cart Header */
+  width: 30% ;
+  /* Same width as the items container */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 999; /* Ensure it appears above other content */
+}
+
+/* Styling for form inputs */
+.checkbox {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.checkbox input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.checkbox label {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  font-size: 16px;
+  color: #555;
+  pointer-events: none;
+  transition: 0.2s;
+}
+
+.checkbox input:focus + label,
+.checkbox input:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  color: #007bff;
+}
+
+/* Styling for the submit button */
+.SubmitButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff; /* Blue background color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.SubmitButton:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styling for error messages */
+.Error {
+  color: #e74c3c;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+  

@@ -1,0 +1,193 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.Admin2 {
+    position: fixed;
+    display: inline;
+    margin-left: 10%;
+    margin-top: 3%;
+    font-size: 20px;
+    z-index: 1;
+    font-family: "Barlow", sans-serif;
+}
+
+.Heado {
+    display: inline;
+    position: fixed;
+    top: 5%;
+    left: 46.5%;
+    font-size: 50px;
+    z-index: 1;
+    color: #e50010;
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+
+.Cart {
+    position: fixed;
+    left: 80%;
+    z-index: 1;
+    font-family: "Barlow", sans-serif;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+#cart {
+    margin-top: 40px;
+    font-family: "Barlow", sans-serif;
+    font-size: larger;
+}
+
+.items {
+    margin-left: 12.5%;
+    font-size: large;
+}
+
+button {
+    margin-top: 30px;
+    height: 40px;
+    width: 80px;
+    font-size: large;
+    border-radius: 10%;
+    border-color: transparent;
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    background-color: transparent;
+}
+
+/* Container styles */
+.Container3 {
+    height: 75vh;
+    width: 90vw ; 
+    border-top: 1px solid grey ;
+    display: flex;
+    position: absolute;
+    top: 17%;
+    left: 3%;
+    justify-content: space-between;
+}
+
+/* Image slider container */
+.images1 {
+    margin-left: 8% ;
+    margin-top: 2% ;
+    height: 550px;
+    width: 400px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow */
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+/* Image slider images */
+.images1 img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Content section styles */
+.Cont {
+    margin-right: 14% ;
+    margin-top: 2% ;
+    height: 550px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+    border-left: 2px solid grey ;
+}
+
+#NAME {
+    margin-top: 1%;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+#Mini {
+    color: grey;
+}
+
+#innercontent {
+    margin-left: 1.5%  ; 
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+}
+
+#Fit {
+    margin-left: 1%  ; 
+    margin-bottom: 5%;
+}
+
+#descrip {
+    margin-left: 2%  ; 
+    margin-top: 10%;
+    color: grey;
+    line-height: 1.5;
+}
+.Cartbutton {
+    background-color:  rgb(101, 183, 101); /* Change to your preferred color */
+    color: white;
+    padding:  auto ; 
+    height: 40px;
+    width: 120px;
+    cursor: pointer;
+    text-align: center;
+    position: absolute ; 
+    top: 38%  ;
+    left: 60% ;/* Center the button */
+  }
+  
+  .Cartbutton:hover {
+    background-color: rgb(80, 160, 80);  /* Change to your preferred hover color */
+  }
+  .Cartbutton:active{
+    background-color:  rgb(60, 140, 60);
+  }
+  .Sizing {
+    position: absolute; 
+    top: 80% ;
+    left: 48% ;
+    text-align: center;
+  }
+  
+  .Sizing label {
+    font-size: 18px;
+    margin-right: 10px;
+    
+    margin-bottom: 10px;
+  }
+  
+  .SizeOption {
+    display: inline-block;
+    padding: auto ; 
+    font-size: 8px;
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Rounded corners */
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .SizeOption:hover {
+    background-color: #007bff; /* Primary color on hover */
+    color: white; /* Text color change on hover */
+  }
+  
+  .SizeOption.active {
+    background-color: #007bff; /* Active state background color */
+    color: white; /* Active state text color */
+    border-color: #007bff; /* Border color for active state */
+  }

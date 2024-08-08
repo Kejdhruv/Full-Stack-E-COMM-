@@ -1,0 +1,48 @@
+/* Ensure you import this CSS file in your Page5 component */
+.AdminH {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    color: #e50010;
+    /* Add a bottom border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.Card {
+    display: inline-block;
+    width: 400px; /* Adjust width as needed */
+    height: 300px; /* Adjust height as needed */
+    margin: 10px;
+    margin-top: 40px ;
+    margin-left: 70px ;
+    background: linear-gradient(135deg, #ffffff, #f4f4f4); /* Gradient background */
+    border-radius: 10px; /* Slightly larger border radius */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+    text-align: center;
+    line-height: 250px; /* Center text vertically */
+    font-size: 30px; /* Adjust font size for balance */
+    position: relative;
+    text-decoration: none; /* Remove underline from link */
+    color: #333; /* Darker text color for better readability */
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.Card:hover {
+    background: linear-gradient(135deg, rgba(229, 0, 16, 0.2), #e0e0e0); /* Lighten background on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.Card:active {
+    background: #e0e0e0; /* Solid color when active */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Reduced shadow when active */
+    transform: translateY(0); /* Reset lift effect when active */
+}
+
+
+ 
+  
+  
+  

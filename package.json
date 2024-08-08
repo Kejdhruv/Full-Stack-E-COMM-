@@ -1,0 +1,22 @@
+{
+  "name": "nodemon",
+  "version": "1.0.0",
+  "description": "clear",
+  "main": "database.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index1.js",
+    "dev": "nodemon index1.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/preset-env": "^7.25.0",
+    "@babel/preset-react": "^7.24.7",
+    "@babel/register": "^7.24.6",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "ignore": "^5.3.1",
+    "styles": "^0.2.1"
+  }
+}

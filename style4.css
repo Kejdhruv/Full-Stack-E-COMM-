@@ -1,0 +1,106 @@
+*{
+    padding: 0 ;
+    margin: 0 ;
+}
+.Entry{
+    margin-top: 3% ;
+    display: inline;
+    margin-left: 5% ;
+    font-size: 30px ;
+    position: fixed;
+    font-family: "Barlow", sans-serif;
+}
+.TitleA{
+    margin-top: 3%  ;
+    display: inline;
+    position: absolute;
+    left: 80% ;
+    font-size: 30px ;
+    color: #e50010 ; 
+    font-family: "Bodoni Moda", serif;
+}
+.Form{
+    position: absolute;
+    top: 20%  ;
+    left: 6%  ;
+    height: 500px ;
+    width: 400px ;
+}
+.Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+
+ .input-box {
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+ .input-box input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+.input-box input:focus {
+    border-color: #007bff;
+  }
+  
+  .input-box label {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 14px;
+    color: #888;
+    transition: all 0.3s;
+    pointer-events: none;
+  }
+  
+  .input-box input:focus + label,
+  .input-box input:not(:placeholder-shown) + label {
+    top: -8px;
+    left: 8px;
+    font-size: 12px;
+    color: #007bff;
+  }
+  
+  .btn1 {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .btn1:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  .btn1:active {
+    background-color: #004494;
+    transform: translateY(0);
+  }
+.Adminimg{
+    position: absolute;
+    left: 50% ;
+    top: 30% ;
+
+}

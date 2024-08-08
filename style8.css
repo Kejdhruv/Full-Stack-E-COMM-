@@ -1,0 +1,118 @@
+/* Sign-in Form Container */
+.User1 {
+  font-size: 40px;
+  margin-top: 2%;
+  margin-left: 16%;
+  font-weight: normal;
+  margin-bottom: 2%;
+  display: inline-block;
+}
+
+/* Sign-in Form Styling */
+.sign-in {
+  background: #f9f9f9; /* Light background for contrast */
+  padding: 25px;
+  border-radius: 10px; /* Slightly more rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+  width: 600px; /* Limit width for better readability */
+  margin-left: 4% ;
+  margin-top: 2%; /* Center the form horizontally */
+  display: flex;
+  
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Form Group Styling */
+.form-group7 {
+  margin-bottom: 20px; /* Increased space between form groups */
+  width: 100%; /* Ensure form groups take full width of the form */
+}
+
+/* Form Group Label Styling */
+.form-group7 label {
+  display: block;
+  margin-bottom: 8px; /* More space between label and input */
+  font-weight: bold; /* Make label text bold */
+  color: #333; /* Darker color for better readability */
+}
+
+/* Form Input Styling */
+.form-group7 input {
+  width: 100%;
+  padding: 12px; /* More padding for input fields */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 6px; /* Slightly rounded corners */
+  font-size: 16px; /* Larger font size for readability */
+  box-sizing: border-box; /* Ensure padding is included in width */
+  transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+/* Input Focus State */
+.form-group7 input:focus {
+  border-color: #007bff; /* Highlight border color on focus */
+  outline: none; /* Remove default focus outline */
+}
+
+/* Error Message Styling */
+.error {
+  color: #e74c3c; /* Brighter red for better visibility */
+  font-size: 0.875em;
+  margin-top: 5px; /* Space between error message and input */
+}
+
+/* Submit Button Styling */
+.s1 {
+  padding: 12px; /* Adjusted padding for better button size */
+  background-color: #28a745; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 6px; /* Rounded corners */
+  cursor: pointer;
+  width: 100%; /* Full width button */
+  max-width: 200px; /* Limit button width */
+  font-size: 16px; /* Larger font size for readability */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+/* Submit Button Hover State */
+.s1:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Submit Button Active State */
+.s1:active {
+  background-color: #1e7e34; /* Even darker green when active */
+  transform: translateY(0); /* Remove lift effect */
+}
+
+/* Title Styling */
+.TitleU {
+  position: absolute;
+  left: 80%;
+  font-size: 30px;
+  color: #e50010;
+  font-family: "Bodoni Moda", serif;
+  top: 5%; /* Adjusted to move the title slightly above */
+}
+
+/* Box Container Styling */
+.Box {
+  display: flex;
+  justify-content: space-between;/* Stack items vertically */
+  align-items: center; /* Center align items horizontally */
+  margin-top: 20px; /* Space from top */
+  width: 100%; /* Full width container */
+  max-width: 1200px; /* Limit container width if necessary */
+
+}
+
+/* Styling for the image */
+.Box img {
+  margin-left: 35% ;
+  max-width: 80%; /* Ensure the image does not exceed the container width */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 8px; /* Optional: add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
+}
